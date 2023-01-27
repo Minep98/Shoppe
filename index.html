@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid-wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-hover  header__navbar-item--separate">
+                            Kênh người bán
+                            <div class="header__qr">
+                                <img src="./assets/img/QR.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-app">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/store.png" alt="Google Play"  class="header__qr-download-img">
+                                    </a>
+                                   <a href="" class="header__qr-link">
+                                    <img src="./assets/img/store.png" alt="App stor" class="header__qr-download-img"> 
+                                   </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="no-point" >Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class='header__navbar-icon bx bxl-facebook-circle'></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class='header__navbar-icon bx bxl-instagram'></i>
+                            </a>
+                            
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has">
+                            <a href=""class="header__navbar-item-link ">
+                                <i class='header__navbar-icon bx bx-bell'></i>
+                                Thông báo
+                            </a>
+
+                            <div class="header__noti">
+                                <header class="header__noti_header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__noti-list">
+                                    <li class="header__noti-item header__noti-item--seen">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/xabong.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Xà bông sạch sẽ dành cho bé</span>
+                                                <span class="header__noti-des">Mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__noti-item header__noti-item--seen">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/xabong.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Xà bông sạch sẽ dành cho bé</span>
+                                                <span class="header__noti-des">Mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/xabong.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Xà bông sạch sẽ dành cho bé</span>
+                                                <span class="header__noti-des">Mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/xabong.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Xà bông sạch sẽ dành cho bé</span>
+                                                <span class="header__noti-des">Mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__noti-end">
+                                    <a href="" class="header__noti-end-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href=""class="header__navbar-item-link">Trợ giúp
+                                <i class='header__navbar-icon bx bx-help-circle' ></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong js-dangki">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <!-- Search -->
+                <div class="header-with-search">
+                    <div class="header-logo">
+                        <a href="" class="bx bxl-shopify">Shopee</a>
+                       
+                    </div>
+                    <div class="header-seach">
+                        <div class="header-seach-input-wrap">
+                            
+                            <input type="text" class="header-seach-input" placeholder="Tìm kiếm">
+                            <div class="header-seach-history">
+                                <h3 class="header-seach-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header-seach-history-list">
+                                    <li class="header-seach-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header-seach-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-seach-select">
+                            <span class="header-seach-select-label">Trong shop
+                            </span>
+                            <i class='bx bxs-down-arrow'></i>
+                            <ul class="header-seach-option">
+                                <li class="header-seach-item" >
+                                    <span>Trong shop</span>
+                                    <i class='bx bx-check'></i>
+                                </li>
+
+                                <li class="header-seach-item">
+                                    <span>Ngoài shop</span>
+                                    <i class='bx bx-check'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header-seach-btn">
+                            <i class='bx bx-search-alt'></i>
+                        </button>
+                    </div>
+    
+                    <div class="header-cart">
+                        <div class="header-cart-wrap">
+
+                            <i class='bx bxs-cart'></i>
+                            <span class="header-cart-notice">3</span>
+                            <!-- no cart:  header__no-cart -->
+                            <div class="header-cart-list">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__no-cart-img">
+                                <span class="header__no-cart-text">
+                                    Chưa có sản phẩm
+                                </span>
+                                <!-- Có sản phẩm -->
+                                <h4 class="header-cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header-cart-list-item">
+                                    <li class="header-cart-item">
+                                        <img src="/assets/img/Quanao.png" alt="" class="header-cart-img">
+                                        <div class="header-cart-info">
+                                            <div class="header-cart-info-head">
+                                                <h5 class="header-cart-info-name">Quần áo thun đại hạ giá</h5>
+                                                <div class="header-cart-info-wrap">
+
+                                                    <span class="header-cart-info-price">300000d</span>
+                                                    <span class="header-cart-info-multiply">x</span>
+                                                    <span class="header-cart-info-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">
+                                                    Phân loại: Áo Thun
+                                                </span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="header-cart-list-item">
+                                    <li class="header-cart-item">
+                                        <img src="/assets/img/mysticM.png" alt="" class="header-cart-img">
+                                        <div class="header-cart-info">
+                                            <div class="header-cart-info-head">
+                                                <h5 class="header-cart-info-name">Bộ quần áo thun khuyến mãi</h5>
+                                                <div class="header-cart-info-wrap">
+
+                                                    <span class="header-cart-info-price">250000d</span>
+                                                    <span class="header-cart-info-multiply">x</span>
+                                                    <span class="header-cart-info-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">
+                                                    Phân loại: Áo thun
+                                                </span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="header-cart-list-item">
+                                    <li class="header-cart-item">
+                                        <img src="/assets/img/Quanao2.png" alt="" class="header-cart-img">
+                                        <div class="header-cart-info">
+                                            <div class="header-cart-info-head">
+                                                <h5 class="header-cart-info-name">Áo thun vải tốt</h5>
+                                                <div class="header-cart-info-wrap">
+
+                                                    <span class="header-cart-info-price">200000d</span>
+                                                    <span class="header-cart-info-multiply">x</span>
+                                                    <span class="header-cart-info-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">
+                                                    Phân loại: Áo thun
+                                                </span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="header-cart-list-item">
+                                    <li class="header-cart-item">
+                                        <img src="/assets/img/kemtrimun.png" alt="" class="header-cart-img">
+                                        <div class="header-cart-info">
+                                            <div class="header-cart-info-head">
+                                                <h5 class="header-cart-info-name">Bộ kem đặc trị mụn lv max</h5>
+                                                <div class="header-cart-info-wrap">
+
+                                                    <span class="header-cart-info-price">200000d</span>
+                                                    <span class="header-cart-info-multiply">x</span>
+                                                    <span class="header-cart-info-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">
+                                                    Phân loại: Kem
+                                                </span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header-cart-view  btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            
+        </header>
+
+        <div class="container"> 
+            <div class="grid-wide">
+                <div class="grid__row app-content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class='bx bx-list-ul'></i>
+                                Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--action">
+                                    <a href="#" class="category-item-link">Trang điểm mặt</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">Trang điểm môi</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                         </nav>
+                    </div>
+
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-label">Sắp xếp theo</span>
+                            <button class="btn home-btn">Phổ biến</button>
+                            <button class="btn btn-primary home-btn">Mới nhất</button>
+                            <button class="btn home-btn">Bán chạy</button>
+
+                        <div class="select-input">
+                            <span class="select-input-label">
+                                Giá
+                            </span>
+                            <i class='bx bxs-down-arrow select-input-icon'></i>
+                            <ul class="select-input-list">
+                                <li class="select-input-item">
+                                    <a href="" class="select-input-link">Giá: thấp đến cao</a>
+                                </li>
+                                <li class="select-input-item">
+                                    <a href="" class="select-input-link">Giá: cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-page">
+                            <span class="home-page-num">
+                                <span class="home-page-current">1</span>/14
+                            </span>
+                            
+                            <div class="home-page-control">
+                                <a href="" class="home-page-btn home-page-btn-disabled">
+                                    <i class='bx bxs-left-arrow'></i>   
+                                </a>
+                                <a href="" class="home-page-btn">
+                                    <i class='bx bxs-right-arrow'></i>   
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(/assets/img/Quanao.png);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần áo thun đẹp bản giới hạn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">500.000đ</span>
+                                            <span class="home-product-item-price-current">400.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">32 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">Trung Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.222đ</span>
+                                            <span class="home-product-item-price-current">100.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">Việt Nam</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(/assets/img/Quanao1.png);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">200.000đ</span>
+                                            <span class="home-product-item-price-current">150.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">20%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">189.000đ</span>
+                                            <span class="home-product-item-price-current">120.222đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">Mỹ</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">20%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">200.000đ</span>
+                                            <span class="home-product-item-price-current">333.222đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.222đ</span>
+                                            <span class="home-product-item-price-current">121.222đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">Hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.322đ</span>
+                                            <span class="home-product-item-price-current">100.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.222đ</span>
+                                            <span class="home-product-item-price-current">121.222đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.322đ</span>
+                                            <span class="home-product-item-price-current">121.322đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/0934a06da7e7b3bbfc819f96ef72017c_tn);">
+                                        </div>
+                                        <h4 class="home-product-item-name">Quần ngắn đẹp bản giới hạn cho các bé trai đang lớn </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">121.322đ</span>
+                                            <span class="home-product-item-price-current">121322đgit</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like">
+                                                <i class=' bx bx-heart'></i>
+                                               
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                                <i class='bx bx-star' ></i>
+                                            </div>
+                                            <span class="home-product-item-sold">99 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">Whoo</span>
+                                            <span class="home-product-item-origin-name">hàn Quốc</span>
+                                        </div>
+
+                                        <div class="home-product-item-favourite">
+                                            <i class='bx bx-check-circle'></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-percent">10%</span>
+                                            <span class="home-product-item-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                        <ul class="pagination home-product-pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="bx bxs-left-arrow "></i>
+                                </a>
+                            
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link pagination-item-link-action">1
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">2
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">3
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">4
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">5
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">...
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">14
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="bx bxs-right-arrow "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid-wide">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">F8-shop</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Trang điểm mặt</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Trang điểm môi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class='footer-item-icon bx bxl-facebook-circle'></i>
+                                    facebook</a>
+                            </li>
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">
+                                    <i class='footer-item-icon bx bxl-instagram-alt' ></i>
+                                    Instagram</a>
+                             </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class='footer-item-icon bx bxl-instagram-alt'></i>
+                                    Link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer-download">
+                            <img src="./assets/img/QR.png" alt="download QR" class="footer-download-qr">
+                            <div class="footer-download-app">
+                                
+                                <img src="./assets/img/gg play.png" alt="Google Play" class="footer-download-img">
+                                <img src="./assets/img/store.png" alt="App store" class="footer-download-img"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <div class="grid-wide">
+                    <p class="footer-text">Bản quyền thuộc về:</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal__over js-model-container">
+
+        </div>
+        <div class="modal__body"> 
+            <!-- Đăng kí -->
+                 <div class="auth__form">
+                <div class="auth__form-container">
+                    <div class="auth__form-head">
+                        <h3 class="auth__form-heading">Đăng Ký</h3>
+                        <span class="auth-switch">Đăng Nhập</span>
+                    </div>
+                    <div class="auth__form-form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email của bạn">
+    
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Mật khẩu của bạn">
+                            
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập lại mật khẩu">
+                            
+                        </div>
+                    </div>
+                    <div class="auth__form-asile">
+                        <p class="auth__form-text">Bằng việc đăng kí, bạn đồng ý với shoppe về
+                            <a href="" class="auth__form-text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth__form-text-link">Chính sách bảo mật</a>
+                        </p>
+                            
+                    </div>
+                    <div class="auth__form-controls">
+                        <button class="btn btn-normal auth__form-controls-back js-trolai">Trở lại</button>
+                        <button class="btn btn-primary">Đăng Ký</button>
+                    </div>
+                </div>
+                
+
+                <div class="auth__form-social">
+                    <a href="" class="btn  btn-site-s btn--with-icon">
+                        <i class='bx bxl-facebook-square'></i>
+                        <span class="auth__form-social-poin">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn btn-site-s btn--with-icon-gg">
+                        <i class='bx bxl-google' ></i>
+                        <span class="auth__form-social-poin">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+                
+            </div> -->
+            <!-- <div class="auth__form">
+                <div class="auth__form-container">
+                    <div class="auth__form-head">
+                        <h3 class="auth__form-heading">Đăng nhập</h3>
+                        <span class="auth-switch">Đăng kí</span>
+                    </div>
+                    <div class="auth__form-form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email của bạn">
+    
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Mật khẩu của bạn">
+                            
+                        </div>
+
+                    </div>
+                    <div class="auth__form-asile">
+                        <div class="auth__form-help">
+                            <a href="" class="auth__form-help-link auth__form-help-link-one">Quên mật khẩu</a>
+                            <span class="auth__form-help-des">|</span>
+                            <a href="" class="auth__form-help-link">Cần trợ giúp?</a>
+                        </div>
+                            
+                    </div>
+                    <div class="auth__form-controls">
+                        <button class="btn btn-normal auth__form-controls-back">Trở lại</button>
+                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                
+
+                <div class="auth__form-social">
+                    <a href="" class="btn  btn-site-s btn--with-icon">
+                        <i class='bx bxl-facebook-square'></i>
+                        <span class="auth__form-social-poin">
+                            Đăng nhập với facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn btn-site-s btn--with-icon-gg">
+                        <i class='bx bxl-google' ></i>
+                        <span class="auth__form-social-poin">
+                            Kết nối với google
+                        </span>
+                    </a>
+                </div>
+                
+            </div> -->
+        <!-- </div>
+    </div> -->
+    <script>
+        const DangkiBtn = document.querySelector('.js-dangki')
+        const modal = document.querySelector('.js-modal')
+        const modelContainer=document.querySelector('.js-model-container')
+        const modalTrolai = document.querySelector('.js-trolai')
+
+        function showDangki(){
+            modal.classList.add('open')
+        }
+        function quayTrolai(){
+            modal.classList.remove('open')
+        }
+
+        DangkiBtn.addEventListener('click',showDangki)
+        modalTrolai.addEventListener('click',quayTrolai)
+        modal.addEventListener('click',quayTrolai)
+        
+    </script>
+</body>
+</html>
